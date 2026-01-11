@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={notoSans.variable}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark text-sm`}
       >
         <NextTopLoader color="white" showSpinner={false} />
         {children}

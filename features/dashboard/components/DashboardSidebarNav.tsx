@@ -79,9 +79,9 @@ const NavItem = ({
   <Link
     href={href}
     {...(tagLink ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-    className={`flex items-center gap-2 p-2 duration-200 hover:bg-secondary/50 ${
+    className={`flex items-center gap-2 p-2 duration-200  ${
       muted ? "text-muted-foreground" : ""
-    } ${active ? "bg-secondary" : ""}`}
+    } ${active ? "bg-primary hover:bg-primary/80" : "hover:bg-secondary/50"}`}
   >
     {icon}
     <span>{children}</span>
