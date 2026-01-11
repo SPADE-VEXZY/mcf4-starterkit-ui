@@ -35,7 +35,7 @@ const DashboardSidebarNav = () => {
         </NavItem>
       </div>
 
-      <div className="mt-auto mx-3 mb-4">
+      <div className="mt-auto mx-2 mb-4">
         <NavItem
           tagLink={true}
           href="https://github.com/SPADE-VEXZY/mcf4-starterkit-ui"
@@ -79,7 +79,7 @@ const NavItem = ({
   <Link
     href={href}
     {...(tagLink ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-    className={`flex items-center gap-2 p-2 duration-200  ${
+    className={`flex items-center gap-2 p-2 duration-200 mx-1 ${
       muted ? "text-muted-foreground" : ""
     } ${active ? "bg-primary hover:bg-primary/80" : "hover:bg-secondary/50"}`}
   >
