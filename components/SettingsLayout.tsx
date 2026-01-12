@@ -8,7 +8,7 @@ const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
 
   return (
-    <div>
+    <div className="h-[90vh] overflow-y-scroll">
       <SettingsHeader pathname={pathname} />
 
       <div className="flex">
