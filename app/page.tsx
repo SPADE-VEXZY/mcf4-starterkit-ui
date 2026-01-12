@@ -1,7 +1,5 @@
-// import { ComponentExample } from "@/components/component-example";
-import { Navbar } from "@/components/nav-bar";
+import { ComponentExample } from "@/components/component-example";
 
 export default function Page() {
-// return <ComponentExample />;
-return <Navbar />
+return <ComponentExample />;
 }
