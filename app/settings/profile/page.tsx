@@ -1,11 +1,12 @@
 import DashboardLayout from "@/components/DashboardLayout";
 import SettingsLayout from "@/components/SettingsLayout";
+import ProfileEditForm from "@/features/profile/components/ProfileEditForm";
 
 const ProfilePage = () => {
   return (
     <DashboardLayout>
         <SettingsLayout>
-            <div>ProfilePage</div>
+            <ProfileEditForm/>
         </SettingsLayout>
     </DashboardLayout>
   );
