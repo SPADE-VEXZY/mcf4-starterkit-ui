@@ -1,5 +1,5 @@
-const RegisterPage = () => {
-  return <div>RegisterPage</div>;
-};
+import RegisterSection from "@/features/register/components/RegisterSection";
 
-export default RegisterPage;
+export default function Page(){
+  return <RegisterSection/>
+}
