@@ -1,18 +1,13 @@
-"use client";
-
 import SettingsHeader from "@/features/settings/components/SettingsHeader";
 import SettingsSidebar from "@/features/settings/components/SettingsSidebar";
-import { usePathname } from "next/navigation";
 
 const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
-  const pathname = usePathname();
-
   return (
     <div className="h-[90vh] overflow-y-scroll">
-      <SettingsHeader pathname={pathname} />
+      <SettingsHeader />
 
       <div className="flex">
-        <SettingsSidebar pathname={pathname} />
+        <SettingsSidebar />
         <div className="flex-1">{children}</div>
       </div>
     </div>

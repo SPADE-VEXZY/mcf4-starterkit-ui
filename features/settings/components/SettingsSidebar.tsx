@@ -2,12 +2,10 @@
 
 import Link from "next/link";
 import { settingsNav } from "../config/settingsNav";
+import { usePathname } from "next/navigation";
 
-interface Props {
-  pathname: string;
-}
-
-const SettingsSidebar = ({ pathname }: Props) => {
+const SettingsSidebar = () => {
+  const pathname = usePathname();
   const active = pathname.split("/")[2];
 
   return (
