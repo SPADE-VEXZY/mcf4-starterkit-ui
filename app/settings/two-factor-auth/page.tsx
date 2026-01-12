@@ -1,8 +1,5 @@
-
 const TwoFactorAuth = () => {
-  return (
-    <div>TwoFactorAuth</div>
-  )
-}
+  return <div>TwoFactorAuth</div>;
+};
 
-export default TwoFactorAuth
+export default TwoFactorAuth;
