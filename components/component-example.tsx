@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -66,6 +67,7 @@ import {
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { PlusIcon, BluetoothIcon, MoreVerticalIcon, FileIcon, FolderIcon, FolderOpenIcon, FileCodeIcon, MoreHorizontalIcon, FolderSearchIcon, SaveIcon, DownloadIcon, EyeIcon, LayoutIcon, PaletteIcon, SunIcon, MoonIcon, MonitorIcon, UserIcon, CreditCardIcon, SettingsIcon, KeyboardIcon, LanguagesIcon, BellIcon, MailIcon, ShieldIcon, HelpCircleIcon, FileTextIcon, LogOutIcon } from "lucide-react"
+import Link from "next/link"
 
 export function ComponentExample() {
   return (
@@ -78,6 +80,7 @@ export function ComponentExample() {
 
 function CardExample() {
   return (
+    
     <Example title="Card" className="items-center justify-center">
       <Card className="relative w-full max-w-sm overflow-hidden pt-0">
         <div className="bg-primary absolute inset-0 z-30 aspect-video opacity-50 mix-blend-color" />
@@ -487,9 +490,10 @@ function FormExample() {
                 />
               </Field>
               <Field orientation="horizontal">
-                <Button type="submit">Submit</Button>
+                <Link href="/login">
+                  <Button>Login</Button></Link>
                 <Button variant="outline" type="button">
-                  Cancel
+                  Register
                 </Button>
               </Field>
             </FieldGroup>
