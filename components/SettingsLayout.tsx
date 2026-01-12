@@ -1,11 +1,22 @@
+"use client";
+
+import SettingsHeader from "@/features/settings/components/SettingsHeader";
+import SettingsSidebar from "@/features/settings/components/SettingsSidebar";
+import { usePathname } from "next/navigation";
 
 const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="flex">
-        <div>SettingsLayout</div>
-        <div>{children}</div>
-    </div>
-  )
-}
+  const pathname = usePathname();
 
-export default SettingsLayout
+  return (
+    <div>
+      <SettingsHeader pathname={pathname} />
+
+      <div className="flex">
+        <SettingsSidebar pathname={pathname} />
+        <div className="flex-1">{children}</div>
+      </div>
+    </div>
+  );
+};
+
+export default SettingsLayout;

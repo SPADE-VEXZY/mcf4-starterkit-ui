@@ -16,7 +16,7 @@ const DashboardSidebarNav = () => {
   return (
     <>
       <div className="flex flex-col mt-6">
-        <p className="text-stone-300 text-sm mb-2 ms-3">Platform</p>
+        <p className="text-muted-foreground text-sm mb-2 ms-3">Platform</p>
 
         <NavItem
           href="/dashboard"
