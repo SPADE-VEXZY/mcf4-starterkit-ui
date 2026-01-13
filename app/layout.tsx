@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Starterkit UI",
     description:
-      "A modern Next.js starter UI kit with theme support, custom Google fonts, top-loading progress, and accessible components.",
+      "A modern Next.js starter UI kit with theme support, custom Google fonts, top-loading progress, and accessible components — ideal for building fast, responsive dashboards and admin panels.",
     images: [
       {
         url: "https://mcf4-starterkit-ui.vercel.app/dashboard.png",
