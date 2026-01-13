@@ -3,7 +3,7 @@
 Minimal starter UI for Next.js projects.
 ## Preview
 
-![Dashboard preview](/dashboard.png)
+![Dashboard preview](/public/dashboard.png)
 
 ## Features
 - Next.js (13+)
