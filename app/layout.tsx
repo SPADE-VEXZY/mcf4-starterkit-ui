@@ -18,7 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Starterkit UI",
-  description: "A modern Next.js starter UI kit with theme support, custom Google fonts, top-loading progress, and accessible components — ideal for building fast, responsive dashboards and admin panels.",
+  description:
+    "A modern Next.js starter UI kit with theme support, custom Google fonts, top-loading progress, and accessible components — ideal for building fast, responsive dashboards and admin panels.",
   keywords: [
     "next.js",
     "starterkit",
@@ -31,9 +32,20 @@ export const metadata: Metadata = {
     "accessibility",
   ],
   creator: "MCF4",
+
   openGraph: {
-    images: "/dashboard.png"
-  }
+    title: "Starterkit UI",
+    description:
+      "A modern Next.js starter UI kit with theme support, custom Google fonts, top-loading progress, and accessible components — ideal for building fast, responsive dashboards and admin panels.",
+    images: [
+      {
+        url: "https://mcf4-starterkit-ui.vercel.app/dashboard.png",
+        width: 1200,
+        height: 630,
+        alt: "Starterkit UI Dashboard Preview",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -42,15 +54,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning >
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-sm`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextTopLoader color="white" showSpinner={false} />
           {children}
         </ThemeProvider>
