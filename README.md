@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# mcf4-starterkit-ui
 
-## Getting Started
+Minimal starter UI for Next.js projects.
+## Preview
 
-First, run the development server:
+![Dashboard preview](/dashboard.png)
 
+## Features
+- Next.js (13+)
+- TypeScript ready
+- Component-driven structure
+- ESlint + Prettier configured
+- CI-friendly scripts
+
+## Prerequisites
+- Node.js 16 or later
+- npm, yarn, or pnpm
+
+## Quickstart
+
+Install dependencies:
+```bash
+# npm
+npm install
+
+# yarn
+yarn
+
+# pnpm
+pnpm install
+```
+
+Run development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build and start:
+```bash
+npm run build
+npm run start
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available scripts
+- dev — start dev server
+- build — production build
+- start — start production server
+- lint — run ESLint
+- format — run Prettier
+- test — run tests (if configured)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Example package.json scripts:
+```json
+{
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "prettier --write .",
+        "test": "jest"
+    }
+}
+```
 
-## Learn More
+## Environment
+Create `.env.local` for environment-specific variables:
+```
+NEXT_PUBLIC_API_URL=https://api.example.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Recommended structure
+```
+/src
+    /app or /pages
+    /components
+    /styles
+    /lib
+/public
+/.eslintrc
+/.prettierrc
+/tsconfig.json
+/package.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
+- Fork, create a feature branch, open a PR.
+- Follow existing code style and run lint/format before committing.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+MIT
