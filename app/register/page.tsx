@@ -1,4 +1,4 @@
-import RegisterSection from "@/features/register/components/RegisterSection";
+import RegisterSection from "@/features/auth/register/components/RegisterSection";
 
 export default function Page(){
   return <RegisterSection/>
